@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e0f7f7;
+  color: #004d4d;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #00796b;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+main {
+  padding: 2rem;
+}
+
+footer {
+  background-color: #004d4d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.animated-btn {
+  background-color: #00897b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: pulse 2s infinite;
+  margin-right: 10px;
+}
+
+.animated-btn:hover {
+  background-color: #004d4d;
+}
+
+.animated-img {
+  width: 300px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.animated-img:hover {
+  transform: scale(1.05);
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.theme-saved {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.wiggle-effect {
+  animation: wiggle 0.6s ease-in-out;
+}
